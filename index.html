@@ -3,20 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Oppah Software | Tecnologia que Simplifica</title>
+  <title>Oppah Software | Soluções Inteligentes para Indústria</title>
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-    body { font-family: 'Inter', sans-serif; }
-    .glass-nav { backdrop-filter: blur(12px); background: rgba(3, 7, 18, 0.7); }
+    body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f8fafc; }
+    .glass-nav { background: rgba(3, 7, 18, 0.7); backdrop-filter: blur(10px); }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-200">
+<body>
 
   <!-- Nav -->
   <nav class="glass-nav fixed w-full z-50 border-b border-white/5">
-    <!-- Adição do Banner Beta no topo da navegação -->
+    <!-- Banner Beta -->
     <div class="bg-sky-900/40 border-b border-sky-500/20 text-center py-1 text-[9px] uppercase tracking-widest text-sky-400 font-bold">
       🚀 Oppah Software | Versão Beta 1.0.0 — Em constante evolução
     </div>
@@ -25,7 +24,7 @@
         <div class="w-8 h-8 bg-sky-500 rounded-lg flex items-center justify-center text-slate-950 font-black">O</div>
         <span class="text-lg font-bold text-white">Oppah</span>
       </div>
-      <!-- Badge Beta no botão de acesso -->
+      <!-- Botão com Badge Beta -->
       <a href="https://app.oppah.com.br" class="relative px-5 py-2 bg-sky-600 hover:bg-sky-500 transition-all text-white text-sm font-semibold rounded-full shadow-lg shadow-sky-600/20">
         Portal Oppah
         <span class="absolute -top-2 -right-2 bg-amber-500 text-[8px] px-1.5 rounded-full text-slate-950 font-black shadow-sm">BETA</span>
@@ -34,13 +33,20 @@
   </nav>
 
   <!-- Hero -->
-  <header class="pt-40 pb-20 px-8 text-center">
-    <h1 class="text-6xl font-extrabold text-white mb-6">Software que <span class="text-sky-500">potencializa</span><br>o seu negócio.</h1>
-    <p class="text-slate-400 text-lg max-w-xl mx-auto mb-10">Desenvolvemos soluções inteligentes, escaláveis e focadas em otimização para diversos segmentos industriais.</p>
-    <a href="login_v2.html" class="px-8 py-4 bg-white text-slate-950 font-bold rounded-2xl hover:bg-slate-200 transition-all">
-      Começar agora
-    </a>
-  </header>
+  <main class="pt-32 pb-20 px-8 max-w-7xl mx-auto text-center">
+    <h1 class="text-6xl font-extrabold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-white to-slate-500">
+      Tecnologia para uma <br> indústria inteligente.
+    </h1>
+    <p class="text-slate-400 text-lg max-w-2xl mx-auto mb-10">
+      Desenvolvemos softwares escaláveis para otimização de processos industriais, começando pelas esquadrias e expandindo para o futuro da sua operação.
+    </p>
+    <div class="flex gap-4 justify-center">
+      <a href="https://app.oppah.com.br" class="px-8 py-3 bg-white text-slate-950 font-bold rounded-xl hover:bg-sky-400 transition-colors">
+        Acessar Sistema
+      </a>
+    </div>
+  </main>
+
   <!-- Rodapé com versão -->
   <footer class="max-w-7xl mx-auto px-8 py-20 text-center border-t border-slate-900">
     <p class="text-slate-600 text-xs">
@@ -48,24 +54,6 @@
       <span class="text-slate-700 font-bold mt-2 inline-block">Versão Beta — Agosto/2026</span>
     </p>
   </footer>
-
-  <!-- Products -->
-  <section class="max-w-7xl mx-auto px-8 py-20">
-    <div class="grid md:grid-cols-2 gap-8">
-      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800">
-        <i class="fa-solid fa-scissors text-sky-400 text-3xl mb-6"></i>
-        <h3 class="text-xl font-bold text-white mb-3">Otimizador de Corte</h3>
-        <p class="text-slate-400 text-sm mb-6">Nosso sistema de ponta para redução de desperdício em metais e esquadrias.</p>
-        <a href="login_v2.html" class="text-sky-400 font-semibold text-sm hover:underline">Acessar Ferramenta →</a>
-      </div>
-      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800">
-        <i class="fa-solid fa-microchip text-indigo-400 text-3xl mb-6"></i>
-        <h3 class="text-xl font-bold text-white mb-3">Desenvolvimento Customizado</h3>
-        <p class="text-slate-400 text-sm mb-6">Consultoria em tecnologia para digitalização e automação de processos internos.</p>
-        <span class="text-slate-600 text-sm font-medium italic">Em breve</span>
-      </div>
-    </div>
-  </section>
 
 </body>
 </html>
