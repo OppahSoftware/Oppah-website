@@ -4,10 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Oppah Software | Soluções Inteligentes para Indústria</title>
+  
+  <!-- Tailwind CSS -->
   <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- FontAwesome Icons (Corrigido para exibir os ícones) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
-    body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f8fafc; }
+    body { font-family: 'Inter', sans-serif; background-color: #030712; color: #f8fafc; overflow-x: hidden; }
     .glass-nav { background: rgba(3, 7, 18, 0.7); backdrop-filter: blur(10px); }
   </style>
 </head>
@@ -30,43 +36,111 @@
         <span class="absolute -top-2 -right-2 bg-amber-500 text-[8px] px-1.5 rounded-full text-slate-950 font-black shadow-sm">BETA</span>
       </a>
     </div>
-  </nav>
-  
+  </nav> 
 
   <!-- Hero -->
   <header class="pt-40 pb-20 px-8 text-center">
-    <h1 class="text-6xl font-extrabold text-white mb-6">Software que <span class="text-sky-500">potencializa</span><br>o seu negócio.</h1>
+    <h1 class="text-5xl md:text-6xl font-extrabold text-white mb-6">Software que <span class="text-sky-500">potencializa</span><br>o seu negócio.</h1>
     <p class="text-slate-400 text-lg max-w-xl mx-auto mb-10">Desenvolvemos soluções inteligentes, escaláveis e focadas em otimização para diversos segmentos industriais.</p>
-    <a href="https://portaloppah.com.br" class="px-8 py-4 bg-white text-slate-950 font-bold rounded-2xl hover:bg-slate-200 transition-all">
-      Acessar Portal
-    </a>
+    
+    <!-- Novos Botões (Conversão + Acesso) -->
+    <div class="flex flex-col sm:flex-row justify-center items-center gap-4">
+      <a href="https://portaloppah.com.br" class="px-8 py-4 bg-emerald-600 text-white font-bold rounded-2xl hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/20 flex items-center gap-2">
+        <i class="fa-solid fa-gift"></i> Ganhe 7 Dias Grátis
+      </a>
+      <a href="https://portaloppah.com.br" class="px-8 py-4 bg-white/10 text-white font-bold rounded-2xl hover:bg-white/20 transition-all border border-white/10 backdrop-blur-sm">
+        Acessar Portal
+      </a>
+    </div>
   </header>
 
   <!-- Products -->
-  <section class="max-w-7xl mx-auto px-8 py-20">
+  <section class="max-w-7xl mx-auto px-8 py-10">
     <div class="grid md:grid-cols-2 gap-8">
-      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800">
+      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800 hover:border-sky-500/50 transition-all">
         <i class="fa-solid fa-scissors text-sky-400 text-3xl mb-6"></i>
         <h3 class="text-xl font-bold text-white mb-3">Otimizador de Corte</h3>
         <p class="text-slate-400 text-sm mb-6">Nosso sistema de ponta para redução de desperdício em metais e esquadrias.</p>
-        <a href="https://www.oppah.com.br/apresentacao.html" class="text-sky-400 font-semibold text-sm hover:underline">conheça mais →</a>
+        <a href="https://www.oppah.com.br/apresentacao.html" class="text-sky-400 font-semibold text-sm hover:underline flex items-center gap-1">conheça mais <i class="fa-solid fa-arrow-right text-[10px]"></i></a>
       </div>
-      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800">
+      <div class="p-8 bg-slate-900/50 rounded-3xl border border-slate-800 relative overflow-hidden opacity-80">
         <i class="fa-solid fa-microchip text-indigo-400 text-3xl mb-6"></i>
         <h3 class="text-xl font-bold text-white mb-3">Oppah Estoques</h3>
-        <p class="text-slate-400 text-sm mb-6">Gerencamento de Estoque.</p>
-        <span class="text-slate-600 text-sm font-medium italic">Em breve</span>
+        <p class="text-slate-400 text-sm mb-6">Gerenciamento inteligente de materiais.</p>
+        <span class="text-slate-500 text-sm font-bold bg-slate-800 px-3 py-1 rounded-full uppercase tracking-wider text-[10px]">Em breve</span>
       </div>
     </div>
   </section>
 
+  <!-- Seção de Investimento -->
+  <section class="max-w-4xl mx-auto px-8 py-16 text-center mt-10">
+    <div class="bg-gradient-to-b from-slate-900/80 to-slate-950 p-8 md:p-12 rounded-3xl border border-slate-800 relative">
+      <div class="w-16 h-16 bg-indigo-500/20 text-indigo-400 rounded-full flex items-center justify-center text-2xl mx-auto mb-6">
+        <i class="fa-solid fa-handshake"></i>
+      </div>
+      <h2 class="text-2xl md:text-3xl font-bold text-white mb-4">Acredita na nossa visão?</h2>
+      <p class="text-slate-400 mb-8 max-w-lg mx-auto">Estamos buscando parceiros estratégicos para acelerar o desenvolvimento de novas ferramentas. Seja um investidor anjo da Oppah Software.</p>
+      <button onclick="document.getElementById('invest-modal').classList.remove('hidden')" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 text-white font-bold rounded-2xl shadow-lg shadow-indigo-600/20 transition-all inline-flex items-center gap-2">
+        <i class="fa-solid fa-seedling"></i> Gostei, quero investir no projeto!
+      </button>
+    </div>
+  </section>
+
   <!-- Rodapé com versão -->
-  <footer class="max-w-7xl mx-auto px-8 py-20 text-center border-t border-slate-900">
+  <footer class="max-w-7xl mx-auto px-8 py-10 text-center border-t border-slate-900 mt-10">
     <p class="text-slate-600 text-xs">
       © 2026 Oppah Software. Iniciando a revolução da otimização. <br>
       <span class="text-slate-700 font-bold mt-2 inline-block">Versão Beta — Agosto/2026</span>
     </p>
   </footer>
+
+  <!-- MODAL DE INVESTIMENTO / CONTATO -->
+  <div id="invest-modal" class="fixed inset-0 z-[100] flex items-center justify-center bg-slate-950/80 backdrop-blur-sm hidden">
+    <div class="bg-slate-900 max-w-md w-full p-8 rounded-3xl shadow-2xl border border-slate-700 relative m-4">
+        
+        <button onclick="document.getElementById('invest-modal').classList.add('hidden')" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+        
+        <div class="text-center mb-6">
+            <div class="w-16 h-16 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mx-auto mb-4 border border-emerald-500/30">
+                <i class="fa-solid fa-briefcase text-2xl"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-white mb-2">Quero Investir</h3>
+            <p class="text-xs text-slate-400">Deixe seus dados e entraremos em contato rapidamente para conversar sobre a parceria.</p>
+        </div>
+        
+        <!-- FORMULÁRIO NATIVO (ATUALIZE SEU E-MAIL AQUI) -->
+        <form action="https://formsubmit.co/seu@email.com.br" method="POST" class="space-y-4">
+            
+            <input type="hidden" name="_subject" value="Novo Interesse de Investimento - Home Page">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_next" value="https://oppah.com.br/">
+
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Seu Nome / Empresa</label>
+                <input type="text" name="Nome" required placeholder="Como podemos chamá-lo?" class="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-800 rounded-xl text-xs text-slate-100 focus:outline-none focus:border-emerald-500 transition-all">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">E-mail</label>
+                <input type="email" name="Email" required placeholder="seu@email.com" class="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-800 rounded-xl text-xs text-slate-100 focus:outline-none focus:border-emerald-500 transition-all">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Telefone / WhatsApp</label>
+                <input type="text" name="Telefone" required placeholder="(11) 99999-9999" class="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-800 rounded-xl text-xs text-slate-100 focus:outline-none focus:border-emerald-500 transition-all">
+            </div>
+            <div>
+                <label class="block text-xs font-semibold text-slate-300 mb-1.5">Mensagem Inicial</label>
+                <textarea name="Mensagem" rows="3" placeholder="Gostaria de saber mais sobre cotas ou licenciamento..." class="w-full px-4 py-2.5 bg-slate-950/80 border border-slate-800 rounded-xl text-xs text-slate-100 focus:outline-none focus:border-emerald-500 transition-all resize-none"></textarea>
+            </div>
+            
+            <button type="submit" class="w-full py-3 mt-2 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs rounded-xl shadow-lg transition-all flex items-center justify-center gap-2">
+                Enviar Contato <i class="fa-regular fa-paper-plane"></i>
+            </button>
+        </form>
+
+    </div>
+  </div>
 
 </body>
 </html>
